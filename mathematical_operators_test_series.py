@@ -94,9 +94,9 @@ def subtraction_test_series():
             correct_answer = correct_answer + 1
             print("Correct! You've gotten " + str(correct_answer) + " correct in a row.")
             # if the number of correct answer is 3, the test completes  and the person is asked for another test
-            if correct_answer == 3:
+            if correct_answer >= 3:
                 print("Congratulations! You mastered subtraction.")
-                break
+                another_test()
             # another set of numbers are generated
             else:
                 num1 = random.randint(MIN_RANGE, MAX_RANGE)
@@ -129,9 +129,9 @@ def multiplication_test_series():
             correct_answer = correct_answer + 1
             print("Correct! You've gotten " + str(correct_answer) + " correct in a row.")
             # if the number of correct answer is 3, the test completes  and the person is asked for another test
-            if correct_answer == 3:
+            if correct_answer >= 3:
                 print("Congratulations! You mastered Multiplication.")
-                break
+                another_test()
             # another set of numbers are generated
             else:
                 num1 = random.randint(MIN_RANGE, MAX_RANGE)
@@ -166,9 +166,9 @@ def division_test_series():
             correct_answer = correct_answer + 1
             print("Correct! You've gotten " + str(correct_answer) + " correct in a row.")
             # if the number of correct answer is 3, the test completes  and the person is asked for another test
-            if correct_answer == 3:
+            if correct_answer >= 3:
                 print("Congratulations! You mastered Division.")
-                break
+                another_test()
             # another set of numbers are generated
             else:
                 num1 = random.randint(MIN_RANGE, MAX_RANGE)
